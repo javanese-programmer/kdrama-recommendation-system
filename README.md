@@ -1,5 +1,5 @@
 
-# Laporan Proyek Machine Learning - Tariq Fitria Aziz
+# Korean Drama Recommendation System
 
 ## Project Overview
 
