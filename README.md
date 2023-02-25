@@ -59,20 +59,24 @@ Di sini, berkas pertama memiliki beberapa nilai yang tidak terdefinisi seperti "
 Selain itu, nama dari beberapa kolom terlalu panjang dan kurang rapi. Oleh karena itu, dilakukan perubahan nama kolom menjadi 'Title', 'Year', 'Final Rating', 'Total Votes', 'Duration', 'Genre', 'Stars', dan 'Synopsis'.
 
 ![EDA1](https://drive.google.com/uc?export=view&id=1waWUBiL6Oq5BvhcX4REwZ75cy1U_k7AJ) 
+
 Gambar 1. Jumlah Nilai yang Hilang pada Berkas Pertama
 
 Saat melakukan pengecekan, diketahui bahwa beberapa kolom memiliki sejumlah nilai yang hilang. Hal ini dapat diamati pada Gambar 1. Meskipun demikian, karena sistem rekomendasi akan dibangun dengan mempertimbangkan *rating dan genre*, kolom dengan banyak nilai hilang akan dibuang terlebih dahulu. Setelah itu, baru dilakukan pembuatan data menurut baris dengan data yang hilang. Hasil akhirnya dapat dilihat pada Gambar 2.
 
 ![EDA2](https://drive.google.com/uc?export=view&id=12pDhrYImkqh1OTDY0e8CEOIcZZ6udylz) 
+
 Gambar 2. Jumlah Nilai Hilang pada Berkas Pertama setelah Dibersihkan
 
 **Visualization**
 Setelah data cukup bersih, hal selanjutnya yang dilakukan adalah melakukan visualisasi pada data, Visualisasi dilakukan pada data yang bernilai numerik. Dalam berkas pertama ini, data yang dimaksud adalah data dalam kolom *Final Rating*. Hasilnya dapat diamati pada Gambar 3 dan Gambar 4.
 
 ![Distplot1](https://drive.google.com/uc?export=view&id=1JtVLENVWIbALJqia32Q1g7b0vU-jbRcu) 
+
 Gambar 3. *Distribution Plot* dari *Final Rating*
 
 ![Boxplot1](https://drive.google.com/uc?export=view&id=1Xo-FDbrKNP_HRa2GzcTZ0Q4zr_ePomhZ) 
+
 Gambar 4. *Boxplot* dari *Final Rating*
 
 Dari visualisasi yang telah dilakukan, diketahui bahwa untuk berkas pertama, distribusi nilai *Final Rating* terpusat di sekitar angka 8. Hal ini dapat dilihat dari *distribution plot* pada Gambar 3. Selain itu, dari *boxplot* pada Gambar 4, diketahui bahwa data *Final Rating* juga memuat beberapa nilai *outliers*.
@@ -82,28 +86,34 @@ Dari visualisasi yang telah dilakukan, diketahui bahwa untuk berkas pertama, dis
 Proses EDA yang dilakukan untuk berkas kedua tidak jauh berbeda dari berkas pertama. Beberapa hal yang dilakukan di antaranya adalah mendefinisikan beberapa nilai yang tidak terdefinisi sebagai nilai yang hilang. Selain itu, dari dilakukan juga perubahan nama kolom menjadi 'Title', 'Review Title', 'Rating', 'Review', dan 'Helpfulness' agar lebih singkat dan informatif. 
 
 ![Eda3](https://drive.google.com/uc?export=view&id=1qrn4MoOPknldX3vLAMzfqW3Fr7Sh91RB) 
+
 Gambar 5. Jumlah Nilai Hilang pada Berkas Kedua
 
 Proses pengecekan pada data juga menemukan data hilang pada berkas kedua. Dari Gambar 5, ditemukan nilai yang hilang pada kolom *Rating*. Oleh karena itu, di sini, baris dengan data yang hilang akan dibuang sehingga jumlah data hilang menjadi seperti pada Gambar 6.
 
 ![Eda4](https://drive.google.com/uc?export=view&id=1kGL3mV6DDJ7AinbgFqlA8gHU1Z47w04L) 
+
 Gambar 6. Jumlah Nilai Hilang pada Berkas Kedua setelah Pembersihan
 
 Pengecekan pada tipe data juga memberikan informasi bahwa tipe data pada kolom *Rating* masih bertipe *object*. Hal ini dapat diamati dari keluaran pada Gambar 7. Oleh karena itu, di sini, juga dilakukan proses konversi dari data *string* atau *object* ke tipe numerik yaitu *integer*. Hasilnya dapat diamati pada Gambar 8.
 
 ![Eda5](https://drive.google.com/uc?export=view&id=15kDVFh5m4gSVUNf5yqStdE7Hc_QS5_1N) 
+
 Gambar 7. Tipe Data dan Jumlah Data Tidak Hilang pada Berkas Kedua
 
 ![Eda6](https://drive.google.com/uc?export=view&id=1LFyDcIib8Jj-g9kCQ47pJAVu7iip7X_j) 
+
 Gambar 8. Tipe Data dan Jumlah Data Tidak Hilang pada Berkas Kedua setelah Konversi
 
 **Visualization**
 Proses visualisasi yang dilakukan juga mirip dengan berkas pertama. Karena nilai *Rating* adalah satu-satunya nilai numerik pada berkas kedua, visualisasi akan dilakukan untuk nilai pada kolom tersebut. Di sini, hasil visualisasi ditunjukkan oleh Gambar 9 dan Gambar 10. 
 
 ![Distplot2](https://drive.google.com/uc?export=view&id=14T9cTQ9r8LWX9TUJPnxEZAoLqha72v2E) 
+
 Gambar 9. *Distribution Plot* dari *Rating*
 
 ![Boxplot2](https://drive.google.com/uc?export=view&id=1e_g77EmLMqqpDDpiD0b2yNJRwEy5ny2T) 
+
 Gambar 10. *Boxplot* dari *Rating*
 
 Dari Gambar 9,  diketahui bahwa nilai rating terpusat di angka 10 yang dapat diamati dari *distribution plot*. Sementara itu, dari Gambar 10, nilai rating pada berkas kedua juga memiliki beberapa *outliers*.
@@ -123,12 +133,14 @@ Gambar 11. Jumlah Kemunculan Judul pada Berkas Pertama
 Setelah dilakukan pengecekan, ternyata terdapat beberapa judul yang memiliki lebih dari satu entri. Hal ini dapat dilihat pada Gambar 11. Oleh karena itu, di sini, baris dengan judul duplikat akan dibuang. Hasilnya dapat diamati pada Gambar 12.
 
 ![Prepare2](https://drive.google.com/uc?export=view&id=17nk1XnAbMcIokeAlSQ1id2cO0pXnZqxA) 
+
 Gambar 12. Jumlah Kemunculan Judul pada Berkas Pertama setelah Pembersihan
 
 **Membuang Genre Non-Drama**
 Ketika dilakukan pengecekan terhadap genre, data ternyata memuat beberapa acara non-drama. Acara tersebut seperti *talk-show*, *game-show*, *reality-TV*, *documentary*, dan *biography*. Pada tahap ini, acara dengan genre tersebut akan dibuang dari data. 
 
 ![Prepare3](https://drive.google.com/uc?export=view&id=1CK_j8lO2h6mPF_d2UAme6BVjoB4OytnV) 
+
 Gambar 13. Genre Non-Drama pada Berkas Pertama
 
 ### Berkas Kedua
