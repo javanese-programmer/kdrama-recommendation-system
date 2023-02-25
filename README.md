@@ -115,7 +115,9 @@ Dari Gambar 9,  diketahui bahwa nilai rating terpusat di angka 10 yang dapat dia
 Seperti telah disebutkan, pada berkas pertama terdapat *outliers* pada nilai *Final Rating*. Oleh karena itu, di sini, data akan dibersihkan dengan *metode Inter-Quantile Range (IQR)*.
 
 **Membuang Judul Duplikat**
+
 ![Prepare1](https://drive.google.com/uc?export=view&id=1RDst7ELd_gu3_dIzLtVefFiV6pSEchoG) 
+
 Gambar 11. Jumlah Kemunculan Judul pada Berkas Pertama
 
 Setelah dilakukan pengecekan, ternyata terdapat beberapa judul yang memiliki lebih dari satu entri. Hal ini dapat dilihat pada Gambar 11. Oleh karena itu, di sini, baris dengan judul duplikat akan dibuang. Hasilnya dapat diamati pada Gambar 12.
